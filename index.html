@@ -8,15 +8,15 @@
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
     <script src="https://kit.fontawesome.com/f882aa070f.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="escuro">
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="#ficha" class="link"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class="link"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+                <li><a href="#" id="botao-tema" class="link"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -38,34 +38,170 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/vl0eatPehLs?si=I8VNOdWBtfi4L2Tf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </article><!--fim article video-->
-            <article class="skills">
+            <article id="skills">
                 <h2><i class="fa-solid fa-brain"></i>Minhas skills</h2>
-                <div class="item"> <!--cada skill tem a estrutura de item-->
-                    <div class="info">
-                        <span class="nome">
-                            HTML
-                        </span>
-                        <span class="porcent">
-                            80%
-                        </span>
+
+                <div id="skill-container">
+                    <div class="item"> <!--cada skill tem a estrutura de item-->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i>HTML5
+                            </span>
+                            <span class="porcent">
+                                70%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 70%;"></div>
+                        </div>
                     </div>
-                    <div class="barra">
-                        <div class="progresso" style="width: 80%;"></div>
+                     <div class="item"> <!--cada skill tem a estrutura de item-->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i>CSS3
+                            </span>
+                            <span class="porcent">
+                                60%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                     <div class="item"> <!--cada skill tem a estrutura de item-->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i>JAVASCRIPT
+                            </span>
+                            <span class="porcent">
+                                30%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                     <div class="item"> <!--cada skill tem a estrutura de item-->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-person"></i>UI/UX
+                            </span>
+                            <span class="porcent">
+                                50%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                     <div class="item"> <!--cada skill tem a estrutura de item-->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-person"></i>FIGMA
+                            </span>
+                            <span class="porcent">
+                                20%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 20%;"></div>
+                        </div>
                     </div>
                 </div>
             </article> <!--fim article skills-->
-            <article class="formacao">
+            <article class="formacao" id="formacao">
                 <h2><i class="fa-solid fa-graduation-cap"></i>Formações</h2>
+
+                <div id="formacao-container">
+                    <div class="curso">
+                        <p class="periodo">2021 - 2023</p>
+                        <h3 class="instituicao"> EREM José Pereira Burgos</h3>
+                        <p class="titulacao">Ensino médio completo</p>
+                    </div>
+                    <div class="curso">
+                        <p class="periodo">2025 - 2026</p>
+                        <h3 class="instituicao">Curso em video - Gustavo Guanabara</h3>
+                        <p class="titulacao">Curso de HTML5 e CSS3</p>
+                    </div>
+                    <div class="curso">
+                        <p class="periodo">2025 - 2026</p>
+                        <h3 class="instituicao">Curso em video - Gustavo Guanabara + Google</h3>
+                        <p class="titulacao">Curso de JavaScript</p>
+                    </div>
+                </div>
             </article><!--fim article formacao-->
-            <article class="projetos">
+            <article class="projetos" id="projetos">
                 <h2><i class="fa-solid fa-trowel-bricks"></i>Projetos</h2>
+
+                <div id="projeto-container">
+                    <div class="projeto">
+                        <img src="imagens/projeto-01-videos.jpg" alt="" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3 class="titulo">Projeto de Vídeos</h3>
+                            <p>Projeto construído para treinar a inserção de videos em site.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro magni tenetur tempora minus sed exercitationem, assumenda dignissimos illum veritatis quibusdam illo ad quidem quis totam. Perferendis tempore ex fuga.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="imagens/projeto-02-cordel.jpg" alt="" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3 class="titulo">Projeto de cordel</h3>
+                            <p>Projeto construído para treinar a efeito paralax em site.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro magni tenetur tempora minus sed exercitationem, assumenda dignissimos illum veritatis quibusdam illo ad quidem quis totam. Perferendis tempore ex fuga.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="imagens/projeto-03-android.jpg" alt="" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo"></p>
+                            <h3 class="titulo">Projeto de Android</h3>
+                            <p>Projeto construído para treinar a criação de imagens e conteudos de forma dinamica em site.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro magni tenetur tempora minus sed exercitationem, assumenda dignissimos illum veritatis quibusdam illo ad quidem quis totam. Perferendis tempore ex fuga.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="imagens/projeto-04-links.jpg" alt="" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo"></p>
+                            <h3 class="titulo">Projeto de Links</h3>
+                            <p>Projeto construído para treinar uso de iframes e links em site.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro magni tenetur tempora minus sed exercitationem, assumenda dignissimos illum veritatis quibusdam illo ad quidem quis totam. Perferendis tempore ex fuga.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="projeto">
+                        <img src="imagens/projeto-05-login.jpg" alt="" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo"></p>
+                            <h3 class="titulo">Projeto de Login</h3>
+                            <p>Projeto construído para treinar a criaçaõ de formularios de cadastro em site.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi porro magni tenetur tempora minus sed exercitationem, assumenda dignissimos illum veritatis quibusdam illo ad quidem quis totam. Perferendis tempore ex fuga.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
             </article><!--fim article projetos-->
 
         </section>
     </main>
 
     <footer>
-
+        Portifolio desenvolvido com instruções do <a href="https://www.cursoemvideo.com/" target="_blank" rel="nofollow">Curso em Video</a> em 2026
     </footer>
     <script src="scripts/script.js"></script>
 </body>
